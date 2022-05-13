@@ -1,25 +1,23 @@
 
 #pragma once
 #include "Shape.h"
+#include "Square.h"
 
 class Rectangle {
-protected:
-
 protected:
     static const double length ;
     static const double width ;
 
 public: //getters
-    getNewLength() const noexcept;
-    getNewWidth() const noexcept;
+    double getNewLength() const noexcept;
+    double getNewWidth() const noexcept;
 
 public: //constructor
     Rectangle{
         const Length newLength,
         const Width newWidth )
 public:
-    compute_area() const no except;
-
+    compute_area(double newLength, double newWidth) const no except;
 };
 
 

@@ -12,6 +12,14 @@ double Rectangle::getLength() const noexcept {
     return Length;
 }
 
-double Rectangle::compute_area() {
+double Rectangle::compute_area(double newLength, double newWidth) {
+    return newLength*newWidth
+}
 
+double Rectangle::getNewLength() const noexcept {
+    return newWidth;
+}
+
+double Rectangle::getNewWidth() const noexcept {
+    return newWidth;
 }
