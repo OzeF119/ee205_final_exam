@@ -1,9 +1,4 @@
-//
-// Created by Nancy Farris on 5/13/22.
-//
 
-#ifndef EE205_FINAL_EXAM_RECTANGLE_H
-#define EE205_FINAL_EXAM_RECTANGLE_H
 #pragma once
 #include "Shape.h"
 
@@ -15,12 +10,15 @@ protected:
     static const double width ;
 
 public: //getters
-    Rectangle newLength;
-    Rectangle newWidth;
+    getNewLength() const noexcept;
+    getNewWidth() const noexcept;
 
-public
-    Rectangle(double newLength, double newWidth )
-
+public: //constructor
+    Rectangle{
+        const Length newLength,
+        const Width newWidth )
+public:
+    compute_area() const no except;
 
 };
 
@@ -29,4 +27,3 @@ public
 
 
 
-#endif //EE205_FINAL_EXAM_RECTANGLE_H
